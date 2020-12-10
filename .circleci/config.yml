@@ -15,5 +15,5 @@ jobs:
         -H 'Content-Type: application/json' \
         -d '{ \
           \"username\":\"mfunaki\", \
-          \"content\":\"'\"${CIRCLE_USERNAME} さんが ${CIRCLE_REPOSITORY_URL} の ${CIRCLE_BRANCH} を更新したよ。\"'\" \
+          \"content\":\"'\"${CIRCLE_USERNAME} さんが ${CIRCLE_PROJECT_REPONAME} の ${CIRCLE_BRANCH} を更新したよ。\"'\" \
         }' ${DISCORD_WEB_HOOK_URL}"
