@@ -14,6 +14,6 @@ jobs:
       - run: "curl -X POST \
         -H 'Content-Type: application/json' \
         -d '{ \
-          \"username\":\"ユーザー\", \
-          \"content\":\"'\"${CIRCLE_BRANCH}\"'\" \
+          \"username\":\"mfunaki\", \
+          \"content\":\"'\"${CIRCLE_USERNAME} さんが ${CIRCLE_REPOSITORY_URL} の ${CIRCLE_BRANCH} を更新したよ。\"'\" \
         }' ${DISCORD_WEB_HOOK_URL}"
